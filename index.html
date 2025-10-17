@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flappy Bird Realistic v4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Selection Screen -->
+  <div id="menu-screen">
+    <h1>🐦 Choose Your Bird</h1>
+    <div id="bird-selection">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png" data-bird="1">
+      <img src="download (1).jpg" data-bird="2">
+      <img src="images.jpg" data-bird="3">
+      <img src="images.png" data-bird="4">
+    </div>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-container" class="hidden">
+    <div id="sky"></div>
+    <div id="clouds"></div>
+    <div id="bird"></div>
+    <div id="score">0</div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="flapSound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg"></audio>
+  <audio id="scoreSound" src="https://actions.google.com/sounds/v1/cartoon/pop.ogg"></audio>
+  <audio id="crashSound" src="https://actions.google.com/sounds/v1/cartoon/metal_twang.ogg"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
